@@ -3,6 +3,7 @@ import http from 'http';
 import serverConfig from './config/server-config'
 import { Server } from 'socket.io';
 import cors from 'cors';
+import roomHandler from './handler/roomHandler';
 
 
 
@@ -20,6 +21,8 @@ const io = new Server(server,{
 
 io.on("connection",(socket)=>{
     console.log("new user connected");
+
+    roomHandler(socket)//pass the socket connection to roomHandler for room creation and joining
     
     socket.on("disconnect",()=>{
         console.log("User disconnected")

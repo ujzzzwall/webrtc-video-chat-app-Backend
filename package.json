@@ -19,6 +19,7 @@
     "@eslint/js": "^10.0.1",
     "@types/express": "^5.0.6",
     "@types/node": "^25.6.0",
+    "@types/uuid": "^10.0.0",
     "@typescript-eslint/eslint-plugin": "^8.58.2",
     "@typescript-eslint/parser": "^8.58.2",
     "concurrently": "^9.2.1",
@@ -30,6 +31,7 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
-    "socket.io": "^4.8.3"
+    "socket.io": "^4.8.3",
+    "uuid": "^13.0.0"
   }
 }
